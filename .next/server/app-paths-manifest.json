@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/crypto-price/route": "app/api/crypto-price/route.js",
+  "/api/total-capital/route": "app/api/total-capital/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/franchise/page": "app/franchise/page.js",
+  "/our-story/page": "app/our-story/page.js",
+  "/page": "app/page.js",
+  "/locations/page": "app/locations/page.js",
+  "/menu/page": "app/menu/page.js"
+}

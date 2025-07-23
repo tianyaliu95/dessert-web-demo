@@ -60,7 +60,7 @@ export default function MenuPage() {
   const sectionRefs = MENU.reduce((acc, cat) => {
     acc[cat.anchor] = useRef<HTMLDivElement>(null);
     return acc;
-  }, {} as Record<string, React.RefObject<HTMLDivElement>>);
+  }, {} as Record<string, React.RefObject<HTMLDivElement | null>>);
 
   const handleTabClick = (anchor: string) => {
     const ref = sectionRefs[anchor];
