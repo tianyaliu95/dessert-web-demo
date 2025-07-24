@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
@@ -18,13 +20,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className + " bg-white min-h-screen flex flex-col"}>
-        <Navbar />
-        <main className="flex-1 w-full">{children}</main>
-        <BackToTop />
-        <Footer />
-      </body>
-    </html>
+    <>
+      <Analytics />
+      <html lang="en">
+        <body className={inter.className + " bg-white min-h-screen flex flex-col"}>
+          <Navbar />
+          <main className="flex-1 w-full">{children}</main>
+          <BackToTop />
+          <Footer />
+        </body>
+      </html>
+    </>
   );
 }
