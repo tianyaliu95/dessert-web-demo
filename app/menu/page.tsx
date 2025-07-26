@@ -84,7 +84,7 @@ export default function MenuPage() {
           <div className="text-lg md:text-2xl text-white tracking-widest mb-8 font-light drop-shadow">TASTE THE FUSION</div>
         </div>
         {/* Category Tabs */}
-        <div className="relative z-30 w-full flex justify-center bg-yellow-300 py-4 gap-2 md:gap-8">
+        <div className="relative z-30 w-full flex justify-center bg-[#2e3f3a]/20 py-4 gap-2 md:gap-8">
           {MENU.map((cat) => (
             <button
               key={cat.category}
@@ -107,7 +107,7 @@ export default function MenuPage() {
             id={cat.anchor}
             className="mb-10 md:mb-16"
           >
-            <h2 className="text-2xl md:text-3xl font-bold text-yellow-500 mb-6 md:mb-8 pl-1 uppercase tracking-wide">{cat.category}</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-6 md:mb-8 pl-1 uppercase tracking-wide">{cat.category}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
               {cat.items.map((item, idx) => (
                 <div key={item.name} className="bg-white rounded-2xl shadow-lg p-5 md:p-7 flex flex-col gap-4 border border-gray-50 hover:shadow-xl transition">

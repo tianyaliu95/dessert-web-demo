@@ -12,7 +12,7 @@ export default function BackToTop() {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-6 right-6 z-50 bg-yellow-400 hover:bg-yellow-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:scale-110 transition-all border-4 border-white cursor-pointer"
+      className="fixed bottom-6 right-6 z-50 bg-[#2e3f3a] hover:bg-[#2e3f3a]/80 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:scale-110 transition-all border-4 border-white cursor-pointer"
       aria-label="Back to top"
       style={{ boxShadow: "0 4px 24px 0 rgba(0,0,0,0.18)" }}
     >
