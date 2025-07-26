@@ -1,11 +1,10 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/about/page": "app/about/page.js",
-  "/api/contact/route": "app/api/contact/route.js",
-  "/click-collect/page": "app/click-collect/page.js",
   "/contact/page": "app/contact/page.js",
   "/franchising/page": "app/franchising/page.js",
   "/locations/page": "app/locations/page.js",
   "/offers/page": "app/offers/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/privacy/page": "app/privacy/page.js"
 }

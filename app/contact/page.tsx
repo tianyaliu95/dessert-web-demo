@@ -50,7 +50,7 @@ export default function ContactPage() {
   return (
     <div className="w-full min-h-[60vh] flex flex-col items-center bg-white py-16 px-4 mb-22">
       <div className="max-w-xl w-full">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-blue-900 lg:mb-26 mb-20 text-center uppercase tracking-tight">Contact Us</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold text-[#2e3f3a] lg:mb-26 mb-20 text-center uppercase tracking-tight">Contact Us</h1>
         <form className="flex flex-col gap-8 px-6 lg:px-0" onSubmit={handleSubmit}>
           {/* Name Field */}
           <div>

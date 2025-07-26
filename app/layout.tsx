@@ -10,8 +10,8 @@ import BackToTop from "./_components/BackToTop";
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export const metadata: Metadata = {
-  title: "Fluffy Fluffy Dessert Cafe",
-  description: "Japanese Soufflé Pancakes & Desserts",
+  title: "Teapresso 野萃",
+  description: "Teapresso 野萃",
 };
 
 export default function RootLayout({

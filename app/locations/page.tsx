@@ -24,14 +24,14 @@ const LOCATIONS = [
 export default function LocationsPage() {
   return (
     <div className="w-full flex flex-col items-center bg-white py-12 md:py-20 px-4 min-h-screen">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-8 md:mb-10 text-center uppercase tracking-tight">Locations</h1>
+      <h1 className="text-4xl md:text-5xl font-extrabold text-[#2e3f3a] mb-8 md:mb-10 text-center uppercase tracking-tight">Locations</h1>
       <div className="max-w-3xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
         {LOCATIONS.map((loc) => (
-          <div key={loc.name} className="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col gap-3 border border-blue-100 hover:shadow-xl transition">
-            <div className="font-bold text-xl md:text-2xl text-blue-900 mb-1">{loc.name}</div>
-            <div className="text-blue-800 text-base mb-1">{loc.address}</div>
-            <div className="text-blue-700 text-sm">{loc.hours}</div>
-            <div className="text-blue-700 text-sm">{loc.phone}</div>
+          <div key={loc.name} className="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col gap-3 border border-[#2e3f3a]/20 hover:shadow-xl transition">
+            <div className="font-bold text-xl md:text-2xl text-[#2e3f3a] mb-1">{loc.name}</div>
+            <div className="text-[#2e3f3a]/80 text-base mb-1">{loc.address}</div>
+            <div className="text-[#2e3f3a]/70 text-sm">{loc.hours}</div>
+            <div className="text-[#2e3f3a]/70 text-sm">{loc.phone}</div>
           </div>
         ))}
       </div>
