@@ -63,7 +63,7 @@ export default function Footer() {
               <a href="/locations" className="text-zinc-400 mb-2">OUR LOCATIONS</a>
               <a href="/click-collect" className="text-zinc-400 mb-2">CLICK & COLLECT</a>
               <a href="/franchising" className="text-zinc-400 mb-2">FRANCHISING</a>
-              <a href="/offers" className="text-zinc-400 mb-8">OFFERS & PROMOTIONS</a>
+              {/* <a href="/offers" className="text-zinc-400 mb-8">OFFERS & PROMOTIONS</a> */}
             </div>
           </div>
 

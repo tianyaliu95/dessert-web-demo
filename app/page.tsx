@@ -2,82 +2,183 @@
 import React from "react";
 import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="w-full flex flex-col items-center bg-white">
+    <div className="min-h-screen bg-white">
       {/* Hero Banner */}
-      <section className="w-full px-0 md:px-12 lg:px-32">
-        <div className="lg:max-w-6xl mx-auto">
+      <section className="md:pb-6">
+        <div className="max-w-6xl mx-auto">
           <Image
-            src="/hero-banner.jpeg"
-            alt="Paris Baguette Hero Banner"
+            src="/home.jpg"
+            alt="Teapresso Tea Extraction Process"
             width={1920}
             height={600}
-            className="w-full h-auto lg:h-[400px] lg:object-cover"
+            className="w-full h-auto"
             priority
           />
         </div>
       </section>
 
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto lg:px-8">
+        {/* Brand Introduction Section */}
+        <section className="py-12 md:py-24 px-6 md:px-0">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#2e3f3a] mb-10 md:mb-12 tracking-tight">
+              Teapresso
+            </h1>
 
-      {/* Afternoon Tea & Click & Collect */}
-      <section className="w-full flex flex-col md:flex-row gap-8 md:gap-16 justify-center items-center py-12 md:py-20 px-4 lg:px-20 bg-white border-b border-[#2e3f3a]/20">
-        <div className="flex-1 flex flex-col items-center md:items-start">
-          <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-2" id="afternoon-tea">Afternoon Tea & Prosecco</h3>
-          <p className="text-base md:text-lg text-neutral-700 mb-4 max-w-md">Enjoy a Sparkling Afternoon Tea Experience for just £26 per guest. Savour a selection of fresh baguettes, indulgent cakes, your choice of hot drink, and a small bottle of Prosecco – the perfect way to unwind.</p>
-          <a href="#contact" className="inline-block bg-[#2e3f3a] hover:bg-[#2e3f3a]/80 text-white font-bold py-2 px-6 rounded-full shadow transition text-base">Book now!</a>
-        </div>
-        <div className="flex-1 flex flex-col items-center md:items-start">
-          <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-2" id="click-collect">Click & Collect</h3>
-          <p className="text-base md:text-lg text-neutral-700 mb-4 max-w-md">Craving the perfect cake? Our freshly baked, handcrafted cakes are made with love in-store, just for you! Whether it’s a special occasion or a sweet treat, we’ve got the ideal cake waiting. Order now and indulge in a slice of perfection.</p>
-          <a href="#contact" className="inline-block bg-[#2e3f3a]/10 hover:bg-[#2e3f3a]/20 text-[#2e3f3a] font-bold py-2 px-6 rounded-full shadow transition text-base border border-[#2e3f3a]/30">Order cake!</a>
-        </div>
-      </section>
-      {/* Featured Products */}
-      <section className="w-full py-12 md:py-20 bg-[#2e3f3a]/5 px-4 border-b border-[#2e3f3a]/20">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#2e3f3a] mb-8 text-center">Featured Treats</h2>
-        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {/* 示例产品卡片，可根据实际产品替换 */}
-          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center border border-[#2e3f3a]/20">
-            <div className="w-32 h-32 mb-4 relative">
-              <Image src="/cake1.jpg" alt="Peach & Earl Grey Cake" fill className="object-cover rounded-xl" />
+            <h2 className="text-xl md:text-2xl italic font-medium text-[#2e3f3a] mb-10 text-gray-600">
+              Awaken Your Tea, Espresso's Way
+            </h2>
+
+            <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed">
+              <p className="text-lg md:text-xl mb-8 font-semibold px-14 md:px-0">
+                Teapresso is the UK's first premium tea-led brand, now proudly offering both artisan milk tea and specialty coffee.
+              </p>
+
+              <p className="text-base md:text-lg mb-8">
+                We specialise in freshly brewed milk tea using advanced tea extraction methods, combining the elegance of Eastern tea culture with the comforting richness of British milk tea. Now, with the addition of hand-crafted espresso and coffee drinks, we continue our mission to create a distinctive, high-quality beverage experience.
+              </p>
+
+              <p className="text-base md:text-lg">
+                Our philosophy is rooted in single-cup extraction, freshly brewed — whether it's a delicate oolong or a bold flat white — celebrating the perfect balance between tradition and innovation in every cup.
+              </p>
             </div>
-            <div className="font-bold text-lg text-neutral-900 mb-1">Peach & Earl Grey Cake</div>
-            <div className="text-neutral-600 text-base mb-1">Coming 15th July!</div>
           </div>
-          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center border border-[#2e3f3a]/20">
-            <div className="w-32 h-32 mb-4 relative">
-              <Image src="/tart.jpg" alt="Pear & Chocolate Tart" fill className="object-cover rounded-xl" />
+        </section>
+
+        {/* Tea Ritual Section */}
+        <section className="py-16 md:py-24 bg-gray-200">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-4xl font-bold text-[#2e3f3a] mb-12 text-center">
+              The birth of a cup of tea is a ritual
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 px-6 md:px-0">
+              {[
+                {
+                  step: "Picking leaves",
+                  description: "Carefully selecting the finest and most complete tea leaves."
+                },
+                {
+                  step: "Grinding",
+                  description: "Grinding the tea leaves to the perfect texture."
+                },
+                {
+                  step: "Weighing",
+                  description: "Precisely measuring, in order to present the purest flavour."
+                },
+                {
+                  step: "Placing tea",
+                  description: "Placing the ground tea powder into the extraction chamber."
+                },
+                {
+                  step: "Selecting",
+                  description: "Pressing the desired mode to extract the ideal flavour."
+                },
+                {
+                  step: "Extracting",
+                  description: "High-pressure release, allowing the essence of the tea to fully bloom."
+                },
+                {
+                  step: "Pouring",
+                  description: "Pouring the freshly extracted tea into the cup, releasing its aroma."
+                },
+                {
+                  step: "Tasting",
+                  description: "Sipping and savouring the natural sweetness and layers of aftertaste."
+                }
+              ].map((item, index) => (
+                <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
+                  {/* <div className="text-2xl font-bold text-[#2e3f3a] mb-2">{index + 1}</div> */}
+                  <h3 className="text-lg font-semibold text-[#2e3f3a] mb-2">{item.step}</h3>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
+                </div>
+              ))}
             </div>
-            <div className="font-bold text-lg text-neutral-900 mb-1">Pear & Chocolate Tart</div>
-            <div className="text-neutral-600 text-base mb-1">Savour the sweet symphony.</div>
           </div>
-          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center border border-[#2e3f3a]/20">
-            <div className="w-32 h-32 mb-4 relative">
-              <Image src="/mochi.jpg" alt="Mochi doughnut" fill className="object-cover rounded-xl" />
+        </section>
+
+        {/* Image Section 1 */}
+        <section className="py-16 md:py-24">
+          <div className="max-w-6xl mx-auto">
+            <Image
+              src="/home_2.png"
+              alt="Teapresso Tea Extraction Process"
+              width={1920}
+              height={600}
+              className="w-full h-auto shadow-lg"
+              priority
+            />
+          </div>
+        </section>
+
+        {/* Art of Extraction Section */}
+        <section className="py-8 md:py-24">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3f3a] mb-12 text-center">
+              The Art of Extraction
+            </h2>
+
+            <div className="space-y-8 px-6 md:px-0">
+              <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                  Selection and Grinding
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  We carefully select high-quality, whole tea leaves, and each leaf is meticulously ground to achieve the ideal texture and taste.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                  Measurement and Extraction
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  We use high-pressure technology to extract the essence of the tea, layer by layer, to restore the true flavour of the leaves.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  This craftsmanship preserves the natural sweetness and subtle fragrance of the tea leaves, delicate as silk, with a lingering aroma - each sip is a whisper to the depths of the tea.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                  Pouring and Tasting
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  The freshly extracted tea is gently poured into the cup, and every sip allows you to experience the natural sweetness and long-lasting aftertaste of the tea, letting the aroma bloom on your palate.
+                </p>
+              </div>
             </div>
-            <div className="font-bold text-lg text-neutral-900 mb-1">Mochi doughnut</div>
-            <div className="text-neutral-600 text-base mb-1">Sweet and delicious.</div>
           </div>
+        </section>
+
+        {/* Image Section 2 */}
+        <section className="py-8 md:py-24">
+          <div className="max-w-6xl mx-auto">
+            <Image
+              src="/home_3.png"
+              alt="Teapresso Tea Experience"
+              width={1920}
+              height={600}
+              className="w-full h-auto shadow-lg"
+              priority
+            />
+          </div>
+        </section>
+
+        <div className="text-center my-6">
+          <a
+            href="https://www.teapresso.co.uk/s/order?location=11eff9bbb340e1a699353cecef6dbab4"
+            target="_blank"
+            className="inline-block text-zinc-100 bg-[#2e3f3a] font-bold py-4 px-8 rounded-full shadow-lg transition-all duration-200 transform hover:scale-105"
+          >
+            View Our Menu Now
+          </a>
         </div>
-      </section>
-      {/* The Art of Baking & Food For Thought */}
-      <section className="w-full py-12 md:py-20 bg-white px-4 border-b border-[#2e3f3a]/20 flex flex-col md:flex-row gap-12 md:gap-24 justify-center items-center">
-        <div className="flex-1 max-w-xl">
-          <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-2">The Art of Baking</h3>
-          <p className="text-base md:text-lg text-neutral-700 mb-4">Open seven days a week, offering the perfect blend of a classic bakery, boulangerie and patisserie. Join us to enjoy freshly baked baguettes, lovely lunch options and cakes that genuinely wouldn’t look out of place hanging in the Louvre.</p>
-        </div>
-        <div className="flex-1 max-w-xl">
-          <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-2">Food For Thought</h3>
-          <p className="text-base md:text-lg text-neutral-700 mb-4">Whatever your dietary requirements, we believe that life’s little pleasures should be for everybody. From vegan delights to allergy-friendly options, we take pride in catering to both your cravings and dietary needs!</p>
-        </div>
-      </section>
-      {/* Locations */}
-      <section className="w-full py-12 md:py-20 bg-[#2e3f3a]/5 px-4 flex flex-col items-center border-b border-[#2e3f3a]/20">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#2e3f3a] mb-6 text-center">Our Locations</h2>
-        <div className="max-w-2xl text-center text-base md:text-lg text-neutral-700 leading-relaxed mb-4">No matter if you’re a local or just passing through, whether you call London home or you’re here to explore, a warm welcome and great food await you at any of our fantastic Paris Baguette locations.</div>
-        <a href="/locations" className="inline-block bg-[#2e3f3a] hover:bg-[#2e3f3a]/80 text-white font-bold py-2 px-8 rounded-full shadow transition text-base">View Locations</a>
-      </section>
+      </div>
     </div>
   );
 }

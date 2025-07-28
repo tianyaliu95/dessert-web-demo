@@ -8,8 +8,8 @@ const NAV_LINKS = [
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact Us" },
   { href: "/click-collect", label: "Click & Collect" },
+  { href: "https://www.teapresso.co.uk/s/order?location=11eff9bbb340e1a699353cecef6dbab4", label: "Menu", target: "_blank" },
   { href: "/franchising", label: "Franchising" },
-  { href: "/offers", label: "Offers" },
 ];
 
 export default function Navbar() {
@@ -53,10 +53,16 @@ export default function Navbar() {
       {/* Desktop menu */}
       <div className="hidden md:flex gap-8 text-[#2e3f3a] font-semibold text-lg">
         {NAV_LINKS.map((item) => (
-          <Link key={item.href} href={item.href} className="relative group transition px-2 py-1 rounded focus:bg-[#2e3f3a]/20 focus:outline-none">
+          <a
+            key={item.href}
+            href={item.href}
+            className="relative group transition px-2 py-1 rounded focus:bg-[#2e3f3a]/20 focus:outline-none"
+            target={item.target}
+            rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
+          >
             <span>{item.label}</span>
             <span className="block h-0.5 bg-[#2e3f3a] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200" />
-          </Link>
+          </a>
         ))}
       </div>
       {/* Mobile hamburger */}

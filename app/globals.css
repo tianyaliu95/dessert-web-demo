@@ -15,7 +15,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', 'Lato', 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
-  color: var(--primary);
+  /* color: var(--primary); */
   font-weight: 700;
 }
 
@@ -24,7 +24,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #2e3f3a;
+  /* color: #2e3f3a; */
 }
 
 ::-webkit-scrollbar-thumb {
