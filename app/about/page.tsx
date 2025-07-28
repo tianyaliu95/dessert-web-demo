@@ -122,6 +122,16 @@ export default function AboutPage() {
           <ImageCarousel images={menuImages} />
         </div>
 
+        <div className="text-center mb-10">
+          <a
+            href="https://www.teapresso.co.uk/s/order?location=11eff9bbb340e1a699353cecef6dbab4"
+            target="_blank"
+            className="inline-block text-zinc-100 bg-[#2e3f3a] font-bold py-4 px-8 rounded-full shadow-lg transition-all duration-200 transform hover:scale-105"
+          >
+            Order Now
+          </a>
+        </div>
+
         {/* Your Everyday Section */}
         <div className="mb-20">
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
