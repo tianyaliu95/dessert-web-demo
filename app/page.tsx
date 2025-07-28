@@ -64,7 +64,7 @@ export default function HomePage() {
             </h2>
 
             <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed">
-              <p className="text-lg md:text-xl mb-8 font-semibold px-14 md:px-0">
+              <p className="text-lg md:text-xl mb-8 font-semibold px-8 md:px-0">
                 Teapresso is the UK's first premium tea-led brand, now proudly offering both artisan milk tea and specialty coffee.
               </p>
 
@@ -82,7 +82,7 @@ export default function HomePage() {
         {/* Tea Ritual Section */}
         <section className="py-16 md:py-24 bg-gray-200">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-4xl font-bold text-[#2e3f3a] mb-12 text-center">
+            <h2 className="text-xl md:text-4xl font-bold text-[#2e3f3a] mb-12 text-center">
               The birth of a cup of tea is a ritual
             </h2>
 
@@ -146,7 +146,7 @@ export default function HomePage() {
         </section>
 
         {/* Art of Extraction Section */}
-        <section className="py-8 md:py-24">
+        <section className="py-0 md:py-24">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2e3f3a] mb-12 text-center">
               The Art of Extraction
@@ -154,31 +154,31 @@ export default function HomePage() {
 
             <div className="space-y-8 px-6 md:px-0">
               <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                <h3 className="text-xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
                   Selection and Grinding
                 </h3>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   We carefully select high-quality, whole tea leaves, and each leaf is meticulously ground to achieve the ideal texture and taste.
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                <h3 className="text-xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
                   Measurement and Extraction
                 </h3>
-                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
                   We use high-pressure technology to extract the essence of the tea, layer by layer, to restore the true flavour of the leaves.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   This craftsmanship preserves the natural sweetness and subtle fragrance of the tea leaves, delicate as silk, with a lingering aroma - each sip is a whisper to the depths of the tea.
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                <h3 className="text-xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
                   Pouring and Tasting
                 </h3>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   The freshly extracted tea is gently poured into the cup, and every sip allows you to experience the natural sweetness and long-lasting aftertaste of the tea, letting the aroma bloom on your palate.
                 </p>
               </div>

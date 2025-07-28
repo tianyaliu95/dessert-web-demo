@@ -43,7 +43,7 @@ export default function PrivacyPage() {
 
             {/* Section 1 */}
             <div className="mb-12">
-              <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
+              <h3 className="text-md md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
                 <span className="w-8 h-8 bg-[#2e3f3a] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
                 What Do We Do With Your Information?
               </h3>
@@ -62,7 +62,7 @@ export default function PrivacyPage() {
 
             {/* Section 2 */}
             <div className="mb-12">
-              <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
+              <h3 className="text-md md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
                 <span className="w-8 h-8 bg-[#2e3f3a] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
                 Consent
               </h3>
@@ -88,7 +88,7 @@ export default function PrivacyPage() {
 
             {/* Section 3 */}
             <div className="mb-12">
-              <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
+              <h3 className="text-md md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
                 <span className="w-8 h-8 bg-[#2e3f3a] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
                 Disclosure
               </h3>
@@ -99,7 +99,7 @@ export default function PrivacyPage() {
 
             {/* Section 4 */}
             <div className="mb-12">
-              <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
+              <h3 className="text-md md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
                 <span className="w-8 h-8 bg-[#2e3f3a] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">4</span>
                 E-Commerce Platform
               </h3>
@@ -121,7 +121,7 @@ export default function PrivacyPage() {
 
             {/* Section 5 */}
             <div className="mb-12">
-              <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
+              <h3 className="text-md md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
                 <span className="w-8 h-8 bg-[#2e3f3a] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">5</span>
                 Third-Party Services
               </h3>
@@ -146,7 +146,7 @@ export default function PrivacyPage() {
 
             {/* Section 6 */}
             <div className="mb-12">
-              <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
+              <h3 className="text-md md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
                 <span className="w-8 h-8 bg-[#2e3f3a] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">6</span>
                 Security
               </h3>
@@ -162,7 +162,7 @@ export default function PrivacyPage() {
 
             {/* Section 7 */}
             <div className="mb-12">
-              <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
+              <h3 className="text-md md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
                 <span className="w-8 h-8 bg-[#2e3f3a] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">7</span>
                 Cookies
               </h3>
@@ -179,7 +179,7 @@ export default function PrivacyPage() {
 
             {/* Section 8 */}
             <div className="mb-12">
-              <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
+              <h3 className="text-md md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
                 <span className="w-8 h-8 bg-[#2e3f3a] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">8</span>
                 Age of Consent
               </h3>
@@ -190,7 +190,7 @@ export default function PrivacyPage() {
 
             {/* Section 9 */}
             <div className="mb-12">
-              <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
+              <h3 className="text-md md:text-2xl font-bold text-[#2e3f3a] mb-6 flex items-center">
                 <span className="w-8 h-8 bg-[#2e3f3a] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">9</span>
                 Changes to This Policy
               </h3>
@@ -206,7 +206,7 @@ export default function PrivacyPage() {
 
             {/* Contact Section */}
             <div className="bg-[#2e3f3a]/5 rounded-2xl p-8">
-              <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6">
+              <h3 className="text-md md:text-2xl font-bold text-[#2e3f3a] mb-6">
                 Questions & Contact
               </h3>
               <div className="space-y-3 text-gray-700">

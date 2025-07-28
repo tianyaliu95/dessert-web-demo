@@ -36,15 +36,15 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-white shadow flex items-center justify-between px-8 py-4 sticky top-0 z-60 border-b border-[#2e3f3a]">
-      <div className="flex items-center gap-2 select-none pl-2 lg:pl-6 h-18 overflow-hidden">
+    <nav className="w-full bg-white shadow flex items-center justify-between px-8 py-2 md:py-4 sticky top-0 z-60 border-b border-[#2e3f3a]">
+      <div className="flex items-center gap-2 select-none pl-2 lg:pl-6 h-12 md:h-18 overflow-hidden">
         <Link href="/">
           <Image
             src="/logo.png"
             alt="Paris Baguette Logo"
             width={120}
             height={40}
-            className="object-cover mb-0" // 可以微调 mt-2 或 mt-1 来上下偏移
+            className="object-cover mb-0 w-20 md:w-[120px] h-auto" // 手机端更小的logo
             priority
           />
         </Link>
@@ -82,17 +82,19 @@ export default function Navbar() {
         <div className={`fixed inset-0 z-[9999] flex flex-col justify-center items-center h-full ${isClosing ? 'animate-slide-out-right' : 'animate-slide-in-right'}`}>
           <div className="absolute inset-0 bg-[#2e3f3a]" />
           <div className="relative w-full sm:w-[400px] h-full flex flex-col justify-center items-center">
+
             <button className="absolute top-8 right-8 z-[10000]" onClick={handleCloseMenu} aria-label="Close menu">
               <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-white hover:cursor-pointer" >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            <nav className="flex flex-col justify-center items-center w-full h-full gap-8">
+
+            <nav className="flex flex-col justify-center items-center w-full h-full gap-6">
               {NAV_LINKS.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="!text-zinc-100 text-2xl font-semibold tracking-wider py-4 px-8 rounded-lg hover:cursor-pointer transition-all w-4/5 text-center focus:outline-none"
+                  className="!text-zinc-100 text-xl font-semibold tracking-wider py-2 px-6 rounded-lg hover:cursor-pointer transition-all w-4/5 text-center focus:outline-none"
                   style={{ fontFamily: 'Inter, system-ui, sans-serif', textShadow: '0 1px 2px rgba(0,0,0,0.4)', transform: 'scaleX(1.1)', letterSpacing: '0.8px' }}
                   onClick={handleCloseMenu}
                 >
@@ -100,6 +102,7 @@ export default function Navbar() {
                 </Link>
               ))}
             </nav>
+
           </div>
         </div>
       )}
