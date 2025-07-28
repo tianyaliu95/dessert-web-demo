@@ -1,10 +1,41 @@
-"use client"
 import React from "react";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Teapresso 野萃 | Modern Tea & Coffee House | Freshly Brewed Excellence",
+  description: "Experience the art of freshly brewed tea and coffee at Teapresso 野萃. Modern tea house serving handcrafted beverages, seasonal treats, and premium ingredients in Manchester, Leeds, and Glasgow.",
+  keywords: ["tea house Manchester", "coffee shop Leeds", "bubble tea Glasgow", "freshly brewed tea", "artisan coffee", "modern tea house", "handcrafted beverages"],
+  openGraph: {
+    title: "Teapresso 野萃 | Modern Tea & Coffee House",
+    description: "Experience the art of freshly brewed tea and coffee at Teapresso 野萃. Your daily ritual destination.",
+    images: ["/home.jpg"],
+  },
+};
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      {/* Additional structured data for homepage */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Teapresso 野萃 - Modern Tea & Coffee House",
+            "description": "Experience the art of freshly brewed tea and coffee at Teapresso 野萃. Modern tea house serving handcrafted beverages and seasonal treats.",
+            "url": "https://teapresso.co.uk",
+            "mainEntity": {
+              "@type": "Restaurant",
+              "name": "Teapresso 野萃",
+              "servesCuisine": ["Tea", "Coffee", "Beverages"],
+              "priceRange": "££"
+            }
+          })
+        }}
+      />
+      <div className="min-h-screen bg-white">
       {/* Hero Banner */}
       <section className="md:pb-6">
         <div className="max-w-6xl mx-auto">
@@ -93,7 +124,7 @@ export default function HomePage() {
                 <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
                   {/* <div className="text-2xl font-bold text-[#2e3f3a] mb-2">{index + 1}</div> */}
                   <h3 className="text-lg font-semibold text-[#2e3f3a] mb-2">{item.step}</h3>
-                  <p className="text-gray-600 text-sm">{item.description}</p>
+                  <p className="text-gray-600 text-base">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -180,5 +211,6 @@ export default function HomePage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

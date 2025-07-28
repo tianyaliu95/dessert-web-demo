@@ -1,4 +1,16 @@
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - Data Protection & Privacy",
+  description: "Read Teapresso 野萃's privacy policy to understand how we collect, use, and protect your personal information. Learn about cookies, data security, and your rights.",
+  keywords: ["privacy policy", "data protection", "cookies policy", "personal information", "GDPR compliance", "data security"],
+  openGraph: {
+    title: "Teapresso Privacy Policy - Data Protection & Privacy",
+    description: "Learn how we protect your personal information and respect your privacy.",
+    images: ["/home.jpg"],
+  },
+};
 
 export default function PrivacyPage() {
   return (

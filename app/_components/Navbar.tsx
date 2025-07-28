@@ -51,17 +51,23 @@ export default function Navbar() {
       </div>
 
       {/* Desktop menu */}
-      <div className="hidden md:flex gap-8 text-[#2e3f3a] font-semibold text-lg">
+      <div
+        className="hidden md:flex gap-8 text-[#2e3f3a] font-semibold text-base tracking-wider mr-10"
+        style={{
+          fontFamily: 'Inter, system-ui, sans-serif',
+          transform: 'scaleX(1.1)',
+          letterSpacing: '0.5px'
+        }}>
         {NAV_LINKS.map((item) => (
           <a
             key={item.href}
             href={item.href}
-            className="relative group transition px-2 py-1 rounded focus:bg-[#2e3f3a]/20 focus:outline-none"
+            className="relative group transition-all duration-200 px-3 py-2 rounded-lg hover:bg-[#2e3f3a]/5 focus:bg-[#2e3f3a]/10 focus:outline-none"
             target={item.target}
             rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
           >
             <span>{item.label}</span>
-            <span className="block h-0.5 bg-[#2e3f3a] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200" />
+            <span className="block h-0.5 bg-[#2e3f3a] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
           </a>
         ))}
       </div>
@@ -86,11 +92,11 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="!text-zinc-100 text-3xl font-bold tracking-wide py-3 px-8 rounded-lg hover:cursor-pointer transition-all w-4/5 text-center focus:outline-none"
-                  style={{ textShadow: '0 1px 2px rgba(0,0,0,0.4)' }}
+                  className="!text-zinc-100 text-2xl font-semibold tracking-wider py-4 px-8 rounded-lg hover:cursor-pointer transition-all w-4/5 text-center focus:outline-none"
+                  style={{ fontFamily: 'Inter, system-ui, sans-serif', textShadow: '0 1px 2px rgba(0,0,0,0.4)', transform: 'scaleX(1.1)', letterSpacing: '0.8px' }}
                   onClick={handleCloseMenu}
                 >
-                  {item.label}
+                  {item.label.toUpperCase()}
                 </Link>
               ))}
             </nav>

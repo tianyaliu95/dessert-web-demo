@@ -1,6 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import ImageCarousel from "../_components/ImageCarousel";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us - Our Story & Philosophy",
+  description: "Founded in 2024, Teapresso 野萃 is a modern tea & coffee house redefining how the world enjoys tea and coffee. Learn about our journey, philosophy, and commitment to quality.",
+  keywords: ["about Teapresso", "tea house story", "modern tea house philosophy", "handcrafted beverages", "tea ritual", "coffee house history"],
+  openGraph: {
+    title: "About Teapresso 野萃 - Our Story & Philosophy",
+    description: "Founded in 2024, Teapresso is a modern tea & coffee house bringing the art of freshly brewed tea and coffee to life.",
+    images: ["/home_2.png"],
+  },
+};
 
 // Menu images data
 const menuImages = [

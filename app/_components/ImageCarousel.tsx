@@ -13,6 +13,7 @@ interface ImageCarouselProps {
 
 export default function ImageCarousel({ images }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isClient, setIsClient] = useState(false);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -26,14 +27,52 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
     setCurrentIndex(index);
   };
 
-  // Auto-play functionality
+  // Ensure we're on the client side before starting auto-play
   useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  // Auto-play functionality - only run on client side
+  useEffect(() => {
+    if (!isClient) return;
+    
     const interval = setInterval(() => {
       nextSlide();
     }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, [currentIndex, isClient]);
+
+  // Show loading state until client-side hydration is complete
+  if (!isClient) {
+    return (
+      <div className="relative w-full max-w-6xl mx-auto">
+        <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+          <div className="relative h-[400px] md:h-[500px] lg:h-[600px]">
+            <div className="absolute inset-0">
+              <Image
+                src={images[0].src}
+                alt={images[0].alt}
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
+                  <h3 className="text-xl md:text-2xl font-bold mb-2">
+                    {images[0].title}
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-200">
+                    {images[0].description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="relative w-full max-w-6xl mx-auto">
