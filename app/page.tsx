@@ -1,25 +1,184 @@
 "use client"
 import React from "react";
+import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="w-full flex flex-col items-center">
-      {/* Hero Section */}
-      <section className="w-full flex flex-col items-center justify-center py-16 md:py-24 bg-white px-4">
-        <h1 className="text-4xl md:text-7xl font-extrabold text-yellow-500 tracking-tight mb-4 text-center uppercase leading-tight">Fluffy Fluffy</h1>
-        <h2 className="text-xl md:text-3xl font-semibold text-neutral-800 mb-6 text-center leading-snug">Japanese Pancakes Handcrafted Masterpiece</h2>
-        <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-4 w-full md:w-auto justify-center items-center">
-          <a href="/menu" className="w-full md:w-auto bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-3 px-8 rounded-full shadow transition text-lg text-center">Our Menu</a>
+    <div className="min-h-screen bg-white">
+      {/* Hero Banner */}
+      <section className="md:pb-6">
+        <div className="max-w-6xl mx-auto">
+          <Image
+            src="/home.jpg"
+            alt="Teapresso Tea Extraction Process"
+            width={1920}
+            height={600}
+            className="w-full h-auto"
+            priority
+          />
         </div>
       </section>
-      {/* Our Story Section */}
-      <section id="our-story" className="w-full bg-yellow-50 py-12 md:py-20 flex flex-col items-center px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-6 text-center">Our Story</h2>
-        <div className="max-w-2xl text-center text-base md:text-lg text-neutral-700 leading-relaxed">
-          Fuwa Fuwa, means “fluffy fluffy”, the UK's largest soufflé pancake & dessert cafe. From breakfast to dinner, and everything in between. We aim to deliver happiness, one pancake at a time.<br/><br/>
-          Each pancake begins with egg whites whipped to soft peaks, essential to their finally airy quality, and is then cooked very slowly at low temperature. Tasting like a delicate balance between a soufflé and a traditional pancake, soufflé pancakes are soft, bouncy, and light.
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto lg:px-8">
+        {/* Brand Introduction Section */}
+        <section className="py-12 md:py-24 px-6 md:px-0">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#2e3f3a] mb-10 md:mb-12 tracking-tight">
+              Teapresso
+            </h1>
+
+            <h2 className="text-xl md:text-2xl italic font-medium text-[#2e3f3a] mb-10 text-gray-600">
+              Awaken Your Tea, Espresso's Way
+            </h2>
+
+            <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed">
+              <p className="text-lg md:text-xl mb-8 font-semibold px-14 md:px-0">
+                Teapresso is the UK's first premium tea-led brand, now proudly offering both artisan milk tea and specialty coffee.
+              </p>
+
+              <p className="text-base md:text-lg mb-8">
+                We specialise in freshly brewed milk tea using advanced tea extraction methods, combining the elegance of Eastern tea culture with the comforting richness of British milk tea. Now, with the addition of hand-crafted espresso and coffee drinks, we continue our mission to create a distinctive, high-quality beverage experience.
+              </p>
+
+              <p className="text-base md:text-lg">
+                Our philosophy is rooted in single-cup extraction, freshly brewed — whether it's a delicate oolong or a bold flat white — celebrating the perfect balance between tradition and innovation in every cup.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Tea Ritual Section */}
+        <section className="py-16 md:py-24 bg-gray-200">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-4xl font-bold text-[#2e3f3a] mb-12 text-center">
+              The birth of a cup of tea is a ritual
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 px-6 md:px-0">
+              {[
+                {
+                  step: "Picking leaves",
+                  description: "Carefully selecting the finest and most complete tea leaves."
+                },
+                {
+                  step: "Grinding",
+                  description: "Grinding the tea leaves to the perfect texture."
+                },
+                {
+                  step: "Weighing",
+                  description: "Precisely measuring, in order to present the purest flavour."
+                },
+                {
+                  step: "Placing tea",
+                  description: "Placing the ground tea powder into the extraction chamber."
+                },
+                {
+                  step: "Selecting",
+                  description: "Pressing the desired mode to extract the ideal flavour."
+                },
+                {
+                  step: "Extracting",
+                  description: "High-pressure release, allowing the essence of the tea to fully bloom."
+                },
+                {
+                  step: "Pouring",
+                  description: "Pouring the freshly extracted tea into the cup, releasing its aroma."
+                },
+                {
+                  step: "Tasting",
+                  description: "Sipping and savouring the natural sweetness and layers of aftertaste."
+                }
+              ].map((item, index) => (
+                <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
+                  {/* <div className="text-2xl font-bold text-[#2e3f3a] mb-2">{index + 1}</div> */}
+                  <h3 className="text-lg font-semibold text-[#2e3f3a] mb-2">{item.step}</h3>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Image Section 1 */}
+        <section className="py-16 md:py-24">
+          <div className="max-w-6xl mx-auto">
+            <Image
+              src="/home_2.png"
+              alt="Teapresso Tea Extraction Process"
+              width={1920}
+              height={600}
+              className="w-full h-auto shadow-lg"
+              priority
+            />
+          </div>
+        </section>
+
+        {/* Art of Extraction Section */}
+        <section className="py-8 md:py-24">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3f3a] mb-12 text-center">
+              The Art of Extraction
+            </h2>
+
+            <div className="space-y-8 px-6 md:px-0">
+              <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                  Selection and Grinding
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  We carefully select high-quality, whole tea leaves, and each leaf is meticulously ground to achieve the ideal texture and taste.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                  Measurement and Extraction
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  We use high-pressure technology to extract the essence of the tea, layer by layer, to restore the true flavour of the leaves.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  This craftsmanship preserves the natural sweetness and subtle fragrance of the tea leaves, delicate as silk, with a lingering aroma - each sip is a whisper to the depths of the tea.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                  Pouring and Tasting
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  The freshly extracted tea is gently poured into the cup, and every sip allows you to experience the natural sweetness and long-lasting aftertaste of the tea, letting the aroma bloom on your palate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Image Section 2 */}
+        <section className="py-8 md:py-24">
+          <div className="max-w-6xl mx-auto">
+            <Image
+              src="/home_3.png"
+              alt="Teapresso Tea Experience"
+              width={1920}
+              height={600}
+              className="w-full h-auto shadow-lg"
+              priority
+            />
+          </div>
+        </section>
+
+        <div className="text-center my-6">
+          <a
+            href="https://www.teapresso.co.uk/s/order?location=11eff9bbb340e1a699353cecef6dbab4"
+            target="_blank"
+            className="inline-block text-zinc-100 bg-[#2e3f3a] font-bold py-4 px-8 rounded-full shadow-lg transition-all duration-200 transform hover:scale-105"
+          >
+            View Our Menu Now
+          </a>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary: #2e3f3a;
+  --secondary: #f7c873;
+  --background: #fff;
+  --foreground: #222;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', 'Lato', 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Lato', 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+  /* color: var(--primary); */
+  font-weight: 700;
+}
+
+a {
+  /* color: var(--primary); */
+  text-decoration: none;
+}
+a:hover {
+  /* color: #2e3f3a; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-slide-in-right {
+  animation: slide-in-right 0.4s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+@keyframes slide-out-right {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.animate-slide-out-right {
+  animation: slide-out-right 0.4s cubic-bezier(0.4,0,0.2,1) both;
 }
