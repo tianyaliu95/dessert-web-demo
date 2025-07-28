@@ -160,7 +160,7 @@ export default function ContactForm({
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-[#2e3f3a] hover:bg-[#2e3f3a]/90 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed transform hover:scale-[1.02] active:scale-[0.98]"
+              className="w-full hover:cursor-pointer bg-[#2e3f3a] hover:bg-[#2e3f3a]/90 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed transform hover:scale-[1.02] active:scale-[0.98]"
             >
               {loading ? (
                 <div className="flex items-center justify-center">

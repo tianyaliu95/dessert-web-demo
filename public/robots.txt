@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://teapresso.co.uk/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Block access to admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /.*
+
+# Allow specific important pages
+Allow: /locations
+Allow: /about
+Allow: /contact
+Allow: /menu
+Allow: /franchising
+Allow: /click-collect
+Allow: /offers
+Allow: /privacy 
