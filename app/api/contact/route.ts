@@ -12,9 +12,9 @@ export async function POST(req: NextRequest) {
 
   try {
     await resend.emails.send({
-      from: "Contact Form <no-reply@xingzhefangche.com>",
-      to: "tianyaliu1995@gmail.com",
-      subject: `[${enquiryType.toUpperCase()}] Contact Form Submission from ${name}`,
+      from: `Contact Form <${process.env.RESEND_DOMAIN}>`,
+      to: `${process.env.RESEND_EMAIL}`,
+      subject: `[${enquiryType.toUpperCase()}] Contact Form from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nEnquiry Type: ${enquiryType}\n\nMessage:\n${message}`,
       replyTo: email,
     });
