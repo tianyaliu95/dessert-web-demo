@@ -14,63 +14,6 @@ export const metadata: Metadata = {
   },
 };
 
-// Menu images data
-const menuImages = [
-  {
-    src: "/menu/m1.jpeg",
-    alt: "Green Tea Chappucino",
-    title: "Green Tea Chappucino",
-    description: "观自在［铁观音］"
-  },
-  {
-    src: "/menu/m2.jpeg",
-    alt: "Peach Tea Chappuccino",
-    title: "Peach Tea Chappuccino",
-    description: "桃花仙［白桃乌龙］"
-  },
-  {
-    src: "/menu/m3.jpeg",
-    alt: "Osmanthus Tea Chappuccino",
-    title: "Osmanthus Tea Chappuccino",
-    description: "不待月［桂花乌龙］"
-  },
-  {
-    src: "/menu/m4.jpeg",
-    alt: "Oolong Tea Chappuccino",
-    title: "Oolong Tea Chappuccino",
-    description: "冬令时［大红袍］"
-  },
-  {
-    src: "/menu/m5.jpeg",
-    alt: "Rose and Lychee Tea Frappe",
-    title: "Rose and Lychee Tea Frappe",
-    description: "瑰姿艳荔 [玫瑰普洱荔枝]"
-  },
-  {
-    src: "/menu/m6.jpeg",
-    alt: "Golden Black Tea Frappe",
-    title: "Golden Black Tea Frappe",
-    description: "落日熔金"
-  },
-  {
-    src: "/menu/m7.jpeg",
-    alt: "Roasted Brown Sugar Milk Bubble",
-    title: "Roasted Brown Sugar Milk Bubble",
-    description: "烤黑糖珍珠牛乳"
-  },
-  {
-    src: "/menu/m8.jpeg",
-    alt: "Original Avocado Yogurt Smoothie",
-    title: "Original Avocado Yogurt Smoothie",
-    description: "经典牛油果酸奶奶昔"
-  },
-  {
-    src: "/menu/m9.jpeg",
-    alt: "Iced Oolong Lemon Tea",
-    title: "Iced Oolong Lemon Tea",
-    description: "心静自然凉"
-  }
-];
 
 export default function AboutPage() {
   return (
@@ -119,7 +62,7 @@ export default function AboutPage() {
           </div>
 
           {/* Image Carousel */}
-          <ImageCarousel images={menuImages} />
+          <ImageCarousel />
         </div>
 
         <div className="text-center mb-10">

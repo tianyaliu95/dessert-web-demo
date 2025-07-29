@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import ImageCarousel from "../_components/ImageCarousel";
 
 export default function ClickCollectPage() {
   return (
@@ -19,7 +20,7 @@ export default function ClickCollectPage() {
       {/* Content Sections */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-24">
         {/* Image Sections */}
-        <div className="space-y-16">
+        <div className="space-y-8">
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <Image
               src="/click_1.jpg"
@@ -76,6 +77,11 @@ export default function ClickCollectPage() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="my-8">
+          {/* Image Carousel */}
+          <ImageCarousel />
         </div>
 
         {/* CTA Section */}

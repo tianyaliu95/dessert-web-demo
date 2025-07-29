@@ -20,7 +20,65 @@ interface CarouselSlide {
     isMenuCTA?: boolean;
 }
 
-export default function ImageCarousel({ images }: ImageCarouselProps) {
+// Menu images data
+const MENU_IMAGES = [
+    {
+      src: "/menu/m1.jpeg",
+      alt: "Green Tea Chappucino",
+      title: "Green Tea Chappucino",
+      description: "观自在［铁观音］"
+    },
+    {
+      src: "/menu/m2.jpeg",
+      alt: "Peach Tea Chappuccino",
+      title: "Peach Tea Chappuccino",
+      description: "桃花仙［白桃乌龙］"
+    },
+    {
+      src: "/menu/m3.jpeg",
+      alt: "Osmanthus Tea Chappuccino",
+      title: "Osmanthus Tea Chappuccino",
+      description: "不待月［桂花乌龙］"
+    },
+    {
+      src: "/menu/m4.jpeg",
+      alt: "Oolong Tea Chappuccino",
+      title: "Oolong Tea Chappuccino",
+      description: "冬令时［大红袍］"
+    },
+    {
+      src: "/menu/m5.jpeg",
+      alt: "Rose and Lychee Tea Frappe",
+      title: "Rose and Lychee Tea Frappe",
+      description: "瑰姿艳荔 [玫瑰普洱荔枝]"
+    },
+    {
+      src: "/menu/m6.jpeg",
+      alt: "Golden Black Tea Frappe",
+      title: "Golden Black Tea Frappe",
+      description: "落日熔金"
+    },
+    {
+      src: "/menu/m7.jpeg",
+      alt: "Roasted Brown Sugar Milk Bubble",
+      title: "Roasted Brown Sugar Milk Bubble",
+      description: "烤黑糖珍珠牛乳"
+    },
+    {
+      src: "/menu/m8.jpeg",
+      alt: "Original Avocado Yogurt Smoothie",
+      title: "Original Avocado Yogurt Smoothie",
+      description: "经典牛油果酸奶奶昔"
+    },
+    {
+      src: "/menu/m9.jpeg",
+      alt: "Iced Oolong Lemon Tea",
+      title: "Iced Oolong Lemon Tea",
+      description: "心静自然凉"
+    }
+  ];
+
+export default function ImageCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isClient, setIsClient] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
@@ -30,7 +88,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
 
     // Add menu CTA card to the images array
     const allSlides: CarouselSlide[] = [
-        ...images,
+        ...MENU_IMAGES,
         {
             src: "/menu/m1.jpeg", // Use first image as background
             alt: "Check out our menu",
@@ -110,8 +168,8 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                     <div className="relative h-[400px] md:h-[500px] lg:h-[600px]">
                         <div className="absolute inset-0">
                             <Image
-                                src={images[0].src}
-                                alt={images[0].alt}
+                                src={MENU_IMAGES[0].src}
+                                alt={MENU_IMAGES[0].alt}
                                 fill
                                 className="object-cover"
                                 priority
@@ -119,10 +177,10 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
                                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
                                     <h3 className="text-xl md:text-2xl font-bold mb-2">
-                                        {images[0].title}
+                                        {MENU_IMAGES[0].title}
                                     </h3>
                                     <p className="text-sm md:text-base text-gray-200">
-                                        {images[0].description}
+                                        {MENU_IMAGES[0].description}
                                     </p>
                                 </div>
                             </div>
