@@ -16,7 +16,7 @@ const socialIcons = {
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#1a2321] text-zinc-100 pt-12 pb-4 px-4 mt-10 pl-10">
+    <footer className="w-full bg-[#1a2321] text-zinc-100 pt-12 pb-4 px-4 pl-10">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10 md:gap-0">
         {/* Logo & Social */}
         <div className="flex flex-col items-start md:items-start gap-6 md:w-1/3">

@@ -4,7 +4,7 @@ import ContactForm from "../_components/ContactForm";
 
 export default function FranchisingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-[#FAF8ED]">
       {/* Hero Section */}
       <div className="bg-[#2e3f3a] text-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -18,7 +18,7 @@ export default function FranchisingPage() {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-24">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-20">
         <div className="space-y-12">
           {/* Opportunity Section */}
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
@@ -79,7 +79,7 @@ export default function FranchisingPage() {
             </div>
           </div>
 
-          <section className="py-2 md:py-24">
+          <section className="py-2 md:py-8">
           <div className="max-w-6xl mx-auto">
             <Image
               src="/franchise.png"
@@ -99,7 +99,7 @@ export default function FranchisingPage() {
       <div id="contact-form" className="bg-gray-50">
         <ContactForm
           title="Contact Us to Find Out More"
-          className="bg-gray-50"
+          className="bg-[#FAF8ED] pb-16"
         />
       </div>
     </div>

@@ -74,7 +74,7 @@ const menuImages = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-[#FAF8ED]">
       {/* Hero Section */}
       <div className="bg-[#2e3f3a] text-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

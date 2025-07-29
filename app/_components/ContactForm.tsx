@@ -63,7 +63,7 @@ export default function ContactForm({
   };
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br from-gray-50 to-white ${className}`}>
+    <div className={`min-h-screen bg-[#FAF8ED] ${className}`}>
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 lg:p-12">
           <div className="text-center mb-8">

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ClickCollectPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-[#FAF8ED]">
       {/* Hero Section */}
       <div className="bg-[#2e3f3a] text-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -89,7 +89,7 @@ export default function ClickCollectPage() {
           <a
             target="_blank"
             href="https://www.teapresso.co.uk/s/order?location=11eff9bbb340e1a699353cecef6dbab4"
-            className="inline-block bg-[#2e3f3a] hover:bg-[#2e3f3a]/90 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 transform hover:scale-105"
+            className="inline-block bg-[#2e3f3a] hover:bg-[#2e3f3a]/90 text-white font-semibold mb-12 py-4 px-8 rounded-lg transition-colors duration-200 transform hover:scale-105"
           >
             Start Ordering
           </a>

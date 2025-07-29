@@ -36,7 +36,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-white shadow flex items-center justify-between px-4 py-2 md:py-4 sticky top-0 z-60 border-b border-[#2e3f3a]">
+    <nav className="w-full bg-white shadow flex items-center justify-between px-4 py-2 md:py-4 sticky top-0 z-60 border-b border-[#FAF8ED]">
       <div className="flex items-center gap-2 select-none pl-0 lg:pl-6 h-12 md:h-18 overflow-hidden">
         <Link href="/">
           <Image
@@ -56,13 +56,13 @@ export default function Navbar() {
         style={{
           fontFamily: 'Inter, system-ui, sans-serif',
           transform: 'scaleX(1.1)',
-          letterSpacing: '0.5px'
+          letterSpacing: '0.25px'
         }}>
         {NAV_LINKS.map((item) => (
           <a
             key={item.href}
             href={item.href}
-            className="relative group transition-all duration-200 px-3 py-2 rounded-lg hover:bg-[#2e3f3a]/5 focus:bg-[#2e3f3a]/10 focus:outline-none"
+            className="relative group transition-all duration-200 px-3 py-2 rounded-lg focus:bg-[#2e3f3a]/10 focus:outline-none"
             target={item.target}
             rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
           >
