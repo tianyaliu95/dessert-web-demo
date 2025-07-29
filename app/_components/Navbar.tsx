@@ -36,7 +36,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-white shadow flex items-center justify-between px-8 py-2 md:py-4 sticky top-0 z-60 border-b border-[#2e3f3a]">
+    <nav className="w-full bg-white shadow flex items-center justify-between px-4 py-2 md:py-4 sticky top-0 z-60 border-b border-[#2e3f3a]">
       <div className="flex items-center gap-2 select-none pl-0 lg:pl-6 h-12 md:h-18 overflow-hidden">
         <Link href="/">
           <Image

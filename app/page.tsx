@@ -3,11 +3,11 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Teapresso 野萃 | Modern Tea & Coffee House | Freshly Brewed Excellence",
+  title: "Teapresso 野萃",
   description: "Experience the art of freshly brewed tea and coffee at Teapresso 野萃. Modern tea house serving handcrafted beverages, seasonal treats, and premium ingredients in Manchester, Leeds, and Glasgow.",
   keywords: ["tea house Manchester", "coffee shop Leeds", "bubble tea Glasgow", "freshly brewed tea", "artisan coffee", "modern tea house", "handcrafted beverages"],
   openGraph: {
-    title: "Teapresso 野萃 | Modern Tea & Coffee House",
+    title: "Teapresso 野萃",
     description: "Experience the art of freshly brewed tea and coffee at Teapresso 野萃. Your daily ritual destination.",
     images: ["/home.jpg"],
   },
@@ -23,7 +23,7 @@ export default function HomePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "Teapresso 野萃 - Modern Tea & Coffee House",
+            "name": "Teapresso 野萃",
             "description": "Experience the art of freshly brewed tea and coffee at Teapresso 野萃. Modern tea house serving handcrafted beverages and seasonal treats.",
             "url": "https://teapresso.co.uk",
             "mainEntity": {

@@ -21,23 +21,24 @@ export default function Footer() {
         {/* Logo & Social */}
         <div className="flex flex-col items-start md:items-start gap-6 md:w-1/3">
           <div className="flex items-center gap-3">
-            <span className="inline-block w-16 h-16 bg-zinc-200 rounded-full flex items-center justify-center overflow-hidden mr-2">
-              <Image
-                src="/ins-logo.jpg"
-                alt="Paris Baguette Logo"
-                width={48}
-                height={48}
-                className="object-cover rounded-full ml-2 mt-1"
-                priority
-              />
-            </span>
+            {/* <div className="relative w-16 h-16 bg-zinc-200 rounded-full flex items-center justify-center overflow-hidden mr-2 flex-shrink-0">
+              <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                <Image
+                  src="/ins-logo.jpg"
+                  alt="Paris Baguette Logo"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div> */}
 
             <div>
               <div className="text-2xl font-fluffy font-bold tracking-widest text-grey-100">Teapresso 野萃</div>
-              <div className="text-sm text-grey-300 tracking-widest mt-2">Awaken your Tea, Espresso's way.</div>
+              <div className="text-sm text-grey-300 tracking-widest mt-2 italic">Awaken your Tea, Espresso's way.</div>
             </div>
           </div>
-          <div className="flex gap-4 mt-4 ml-1 md:ml-0">
+          <div className="flex gap-4 mt-4">
             {/* Instagram */}
             <a key={socialIcons.instagram.name} href={socialIcons.instagram.href} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
               <svg width="32" height="32" fill="none" viewBox="0 0 24 24" className="text-zinc-100">

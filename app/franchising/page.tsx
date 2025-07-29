@@ -79,15 +79,18 @@ export default function FranchisingPage() {
             </div>
           </div>
 
-          <section className="w-full h-[400px] md:h-[600px] relative">
+          <section className="py-2 md:py-24">
+          <div className="max-w-6xl mx-auto">
             <Image
               src="/franchise.png"
-              alt="Teapresso Hero Banner"
-              fill
-              className="object-cover"
+              alt="Teapresso Tea Experience"
+              width={1920}
+              height={600}
+              className="w-full h-auto shadow-lg"
               priority
             />
-          </section>
+          </div>
+        </section>
 
         </div>
       </div>
