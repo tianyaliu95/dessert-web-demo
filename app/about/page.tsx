@@ -91,15 +91,15 @@ export default function AboutPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         {/* Who We Are Section */}
         <div className="mb-20">
-          <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl text-center md:text-3xl font-bold text-[#2e3f3a] mb-6">
               Who We Are
             </h2>
-            <div className="space-y-4 text-gray-700">
-              <p className="text-lg leading-relaxed">
+            <div className="space-y-4 text-gray-700 text-center px-4">
+              <p className="text-base leading-relaxed">
                 Founded in 2024, Teapresso is a modern tea & coffee house redefining how the world enjoys tea and coffee, one freshly extracted cup at a time.
               </p>
-              <p className="text-lg leading-relaxed">
+              <p className="text-base leading-relaxed">
                 From vibrant global cities like Manchester, Toronto, and Glasgow to intimate neighbourhood corners, Teapresso brings the art of freshly brewed tea and coffee to life. No matter how far we grow, we remain that "hidden gem" — a cosy, stylish spot where quality and ritual meet, and every cup tells a story.
               </p>
             </div>
@@ -113,7 +113,7 @@ export default function AboutPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-6">
               What We Do
             </h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            <p className="text-base text-gray-700 max-w-3xl mx-auto px-4">
               Discover our passion for crafting exceptional beverages and creating memorable experiences through our carefully curated menu and warm hospitality.
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
               <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-6">
                 Your Everyday
               </h2>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              <p className="text-base text-gray-700 max-w-3xl mx-auto">
                 Though our signature freshly brewed milk teas are at the heart of what we do, Teapresso finds the perfect balance between a modern tea house and a neighbourhood café.
               </p>
             </div>
@@ -201,7 +201,7 @@ export default function AboutPage() {
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Experience Teapresso Today
             </h3>
-            <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
+            <p className="text-base text-gray-200 mb-8 max-w-2xl mx-auto">
               Visit one of our locations and discover why we're becoming the favorite spot for tea and coffee lovers everywhere.
             </p>
             <a

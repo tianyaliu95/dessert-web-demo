@@ -28,18 +28,10 @@ export default function PrivacyPage() {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-24">
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
           <div className="prose prose-lg max-w-none">
-            {/* Introduction */}
-            <div className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-6">
-                Privacy Policy
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                This Privacy Policy describes how Teapresso collects, uses, and protects your personal information when you visit our website or use our services.
-              </p>
-            </div>
+            
 
             {/* Section 1 */}
             <div className="mb-12">

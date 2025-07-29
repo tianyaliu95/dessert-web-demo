@@ -27,15 +27,15 @@ export default function FranchisingPage() {
             </h2>
 
             <div className="prose prose-lg text-gray-700">
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-base leading-relaxed mb-4">
                 Do you have an entrepreneurial spirit and a passion for redefining how people experience tea and coffee?
               </p>
 
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-base leading-relaxed mb-4">
                 Or are you an experienced operator looking to bring a fresh, modern beverage concept into your growing portfolio?
               </p>
 
-              <p className="text-lg leading-relaxed font-semibold text-[#2e3f3a]">
+              <p className="text-base leading-relaxed font-semibold text-[#2e3f3a]">
                 If so, your next opportunity starts here...
               </p>
             </div>
@@ -48,15 +48,15 @@ export default function FranchisingPage() {
             </h2>
 
             <div className="prose prose-lg text-gray-700">
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-base leading-relaxed mb-4">
                 We're a fast-growing premium tea and coffee brand, delighting guests with freshly brewed milk teas, specialty coffees, and handcrafted drinks — paired with light bites and seasonal treats — now proudly serving customers across the UK and beyond.
               </p>
 
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-base leading-relaxed mb-4">
                 No matter how far we expand, we remain that "great little spot" where quality, comfort, and culture blend seamlessly — the kind of place people return to, cup after cup.
               </p>
 
-              <p className="text-lg leading-relaxed font-semibold text-[#2e3f3a]">
+              <p className="text-base leading-relaxed font-semibold text-[#2e3f3a]">
                 Just one reason why franchising with Teapresso might be your next great move.
               </p>
             </div>
@@ -69,11 +69,11 @@ export default function FranchisingPage() {
             </h2>
 
             <div className="prose prose-lg text-gray-700">
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-base leading-relaxed mb-4">
                 As you gear up for your grand opening, our Operations and Marketing teams will be by your side to make sure everything is ready.
               </p>
 
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-base leading-relaxed mb-4">
                 From final in-store training to tailored local marketing plans, we'll support you through every detail — ensuring you launch with confidence and make a strong first impression in your community.
               </p>
             </div>

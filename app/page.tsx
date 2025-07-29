@@ -55,16 +55,16 @@ export default function HomePage() {
         {/* Brand Introduction Section */}
         <section className="py-12 md:py-24 px-6 md:px-0">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-[#2e3f3a] mb-10 md:mb-12 tracking-tight">
+            <h1 className="text-3xl md:text-6xl font-bold text-[#2e3f3a] mb-10 md:mb-12 tracking-tight">
               Teapresso
             </h1>
 
-            <h2 className="text-xl md:text-2xl italic font-medium text-[#2e3f3a] mb-10 text-gray-600">
+            <h2 className="text-lg md:text-2xl italic font-medium text-[#2e3f3a] mb-10 text-gray-600">
               Awaken Your Tea, Espresso's Way
             </h2>
 
             <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed">
-              <p className="text-lg md:text-xl mb-8 font-semibold px-8 md:px-0">
+              <p className="text-base md:text-xl mb-8 font-semibold px-8 md:px-0">
                 Teapresso is the UK's first premium tea-led brand, now proudly offering both artisan milk tea and specialty coffee.
               </p>
 
@@ -123,8 +123,8 @@ export default function HomePage() {
               ].map((item, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
                   {/* <div className="text-2xl font-bold text-[#2e3f3a] mb-2">{index + 1}</div> */}
-                  <h3 className="text-lg font-semibold text-[#2e3f3a] mb-2">{item.step}</h3>
-                  <p className="text-gray-600 text-base">{item.description}</p>
+                  <h3 className="text-base font-semibold text-[#2e3f3a] mb-2">{item.step}</h3>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -148,37 +148,37 @@ export default function HomePage() {
         {/* Art of Extraction Section */}
         <section className="py-0 md:py-24">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2e3f3a] mb-12 text-center">
+            <h2 className="text-2xl md:text-4xl font-bold text-[#2e3f3a] mb-6 text-center">
               The Art of Extraction
             </h2>
 
             <div className="space-y-8 px-6 md:px-0">
               <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-                <h3 className="text-xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                <h3 className="text-lg md:text-3xl font-bold text-[#2e3f3a] mb-4">
                   Selection and Grinding
                 </h3>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
                   We carefully select high-quality, whole tea leaves, and each leaf is meticulously ground to achieve the ideal texture and taste.
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-                <h3 className="text-xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                <h3 className="text-lg md:text-3xl font-bold text-[#2e3f3a] mb-4">
                   Measurement and Extraction
                 </h3>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
+                <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-4">
                   We use high-pressure technology to extract the essence of the tea, layer by layer, to restore the true flavour of the leaves.
                 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
                   This craftsmanship preserves the natural sweetness and subtle fragrance of the tea leaves, delicate as silk, with a lingering aroma - each sip is a whisper to the depths of the tea.
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-                <h3 className="text-xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
+                <h3 className="text-lg md:text-3xl font-bold text-[#2e3f3a] mb-4">
                   Pouring and Tasting
                 </h3>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
                   The freshly extracted tea is gently poured into the cup, and every sip allows you to experience the natural sweetness and long-lasting aftertaste of the tea, letting the aroma bloom on your palate.
                 </p>
               </div>
