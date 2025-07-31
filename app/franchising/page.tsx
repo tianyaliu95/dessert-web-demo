@@ -492,7 +492,7 @@ export default function FranchisingPage() {
                     Ready to Start Your Journey?
                   </h2>
                   <p className="text-lg md:text-xl text-gray-200 mb-8 lg:mb-12 leading-relaxed">
-                    Fill out the form and our franchise team will get back to you within 24 hours to discuss this exciting opportunity.
+                    Fill out the form and our franchise team will get back to you to discuss this exciting opportunity.
                   </p>
                 </div>
 
