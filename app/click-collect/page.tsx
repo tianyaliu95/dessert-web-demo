@@ -36,24 +36,24 @@ export default function ClickCollectPage() {
       </div>
 
       {/* Content Sections */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-16">
         {/* Image Sections */}
-        <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <SlideLeft>
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full">
               <Image
                 src="/click_1.jpg"
                 alt="Teapresso Click & Collect Experience"
-                width={1920}
-                height={600}
-                className="w-full h-auto"
+                width={600}
+                height={400}
+                className="w-full h-48 md:h-56 object-cover"
                 priority
               />
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-[#2e3f3a] mb-4">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#2e3f3a] mb-3">
                   Freshly Crafted for You
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed text-sm">
                   Every order is prepared fresh to order, ensuring you get the perfect taste and quality every time.
                 </p>
               </div>
@@ -61,20 +61,20 @@ export default function ClickCollectPage() {
           </SlideLeft>
 
           <SlideRight delay={200}>
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full">
               <Image
                 src="/click_2.jpg"
                 alt="Teapresso Menu Selection"
-                width={1920}
-                height={600}
-                className="w-full h-auto"
+                width={600}
+                height={400}
+                className="w-full h-48 md:h-56 object-cover"
                 priority
               />
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-[#2e3f3a] mb-4">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#2e3f3a] mb-3">
                   Extensive Menu
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed text-sm">
                   From classic milk teas to specialty coffees, explore our full menu of premium beverages and treats.
                 </p>
               </div>
@@ -82,20 +82,20 @@ export default function ClickCollectPage() {
           </SlideRight>
 
           <SlideLeft delay={400}>
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full">
               <Image
                 src="/click_3.jpg"
                 alt="Teapresso Collection Point"
-                width={1920}
-                height={600}
-                className="w-full h-auto"
+                width={600}
+                height={400}
+                className="w-full h-48 md:h-56 object-cover"
                 priority
               />
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-[#2e3f3a] mb-4">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#2e3f3a] mb-3">
                   Convenient Collection
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed text-sm">
                   Skip the queue and collect your order at your convenience. Perfect for busy schedules.
                 </p>
               </div>

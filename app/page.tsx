@@ -62,26 +62,26 @@ export default function HomePage() {
               </h1>
             </FadeIn>
             
-            <SlideUp delay={400}>
+            <SlideUp delay={300}>
               <h2 className="text-lg md:text-2xl italic font-medium text-[#2e3f3a] mb-10 text-gray-600">
                 Awaken Your Tea, Espresso's Way
               </h2>
             </SlideUp>
             
             <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed">
-              <SlideUp delay={600}>
+              <SlideUp delay={400}>
                 <p className="text-base md:text-xl mb-8 px-8 bg-[#2e3f3a] text-zinc-100 py-10">
                   Teapresso is the UK's first premium tea-led brand, now proudly offering both artisan milk tea and specialty coffee.
                 </p>
               </SlideUp>
 
-              <SlideUp delay={800}>
+              <SlideUp delay={500}>
                 <p className="text-base md:text-lg mb-8">
                   We specialise in freshly brewed milk tea using advanced tea extraction methods, combining the elegance of Eastern tea culture with the comforting richness of British milk tea. Now, with the addition of hand-crafted espresso and coffee drinks, we continue our mission to create a distinctive, high-quality beverage experience.
                 </p>
               </SlideUp>
 
-              <SlideUp delay={1000}>
+              <SlideUp delay={600}>
                 <p className="text-base md:text-lg">
                   Our philosophy is rooted in single-cup extraction, freshly brewed — whether it's a delicate oolong or a bold flat white — celebrating the perfect balance between tradition and innovation in every cup.
                 </p>
@@ -135,10 +135,10 @@ export default function HomePage() {
                 }
               ].map((item, index) => (
                 <SlideUp key={index} delay={index * 100}>
-                  <div className="rounded-xl p-6 shadow-sm bg-[#FAF8ED]">
+                  <div className="rounded-xl p-6 shadow-sm bg-[#FAF8ED] h-full">
                     {/* <div className="text-2xl font-bold text-[#2e3f3a] mb-2">{index + 1}</div> */}
                     <h3 className="text-base font-semibold text-[#2e3f3a] mb-2">{item.step}</h3>
-                    <p className="text-gray-600 text-sm">{item.description}</p>
+                    <p className="text-gray-600 text-sm flex flex-grow">{item.description}</p>
                   </div>
                 </SlideUp>
               ))}
@@ -181,7 +181,7 @@ export default function HomePage() {
                 </div>
               </SlideUp>
 
-              <SlideUp delay={400}>
+              <SlideUp delay={300}>
                 <div className="bg-[#2e3f3a] rounded-2xl p-8 md:p-12 shadow-lg">
                   <h3 className="text-lg md:text-3xl font-semibold text-[#FAF8ED] mb-4 italic">
                     Measurement and Extraction
@@ -195,7 +195,7 @@ export default function HomePage() {
                 </div>
               </SlideUp>
 
-              <SlideUp delay={600}>
+              <SlideUp delay={400}>
                 <div className="bg-[#2e3f3a] rounded-2xl p-8 md:p-12 shadow-lg">
                   <h3 className="text-lg md:text-3xl font-semibold text-[#FAF8ED] mb-4 italic">
                     Pouring and Tasting
