@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import ImageCarousel from "../_components/ImageCarousel";
 import { Metadata } from "next";
+import { SlideUp, FadeIn, SlideLeft, SlideRight } from "../_components/ScrollAnimation";
 
 export const metadata: Metadata = {
   title: "About Us - Our Story & Philosophy",
@@ -21,12 +22,16 @@ export default function AboutPage() {
       {/* Hero Section */}
       <div className="bg-[#2e3f3a] text-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight">
-            About Us
-          </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-            Redefining how the world enjoys tea and coffee, one freshly extracted cup at a time.
-          </p>
+          <FadeIn>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight">
+              About Us
+            </h1>
+          </FadeIn>
+          <SlideUp delay={300}>
+            <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+              Redefining how the world enjoys tea and coffee, one freshly extracted cup at a time.
+            </p>
+          </SlideUp>
         </div>
       </div>
 
@@ -34,35 +39,41 @@ export default function AboutPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         {/* Who We Are Section */}
         <div className="mb-20">
-          <div className="max-w-4xl mx-auto">
+          <SlideUp className="max-w-4xl mx-auto">
             <h2 className="text-2xl text-center md:text-3xl font-bold text-[#2e3f3a] mb-6">
               Who We Are
             </h2>
             <div className="space-y-4 text-gray-700 text-center px-4">
-              <p className="text-base leading-relaxed">
-                Founded in 2024, Teapresso is a modern tea & coffee house redefining how the world enjoys tea and coffee, one freshly extracted cup at a time.
-              </p>
-              <p className="text-base leading-relaxed">
-                From vibrant global cities like Manchester, Toronto, and Glasgow to intimate neighbourhood corners, Teapresso brings the art of freshly brewed tea and coffee to life. No matter how far we grow, we remain that "hidden gem" — a cosy, stylish spot where quality and ritual meet, and every cup tells a story.
-              </p>
+              <SlideUp delay={200}>
+                <p className="text-base leading-relaxed">
+                  Founded in 2024, Teapresso is a modern tea & coffee house redefining how the world enjoys tea and coffee, one freshly extracted cup at a time.
+                </p>
+              </SlideUp>
+              <SlideUp delay={400}>
+                <p className="text-base leading-relaxed">
+                  From vibrant global cities like Manchester, Toronto, and Glasgow to intimate neighbourhood corners, Teapresso brings the art of freshly brewed tea and coffee to life. No matter how far we grow, we remain that "hidden gem" — a cosy, stylish spot where quality and ritual meet, and every cup tells a story.
+                </p>
+              </SlideUp>
             </div>
-          </div>
+          </SlideUp>
 
         </div>
 
         {/* What We Do Section with Carousel */}
         <div className="mb-20">
-          <div className="text-center mb-12">
+          <SlideUp className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-6">
               What We Do
             </h2>
             <p className="text-base text-gray-700 max-w-3xl mx-auto px-4">
               Discover our passion for crafting exceptional beverages and creating memorable experiences through our carefully curated menu and warm hospitality.
             </p>
-          </div>
+          </SlideUp>
 
           {/* Image Carousel */}
-          <ImageCarousel />
+          <SlideUp delay={300}>
+            <ImageCarousel />
+          </SlideUp>
         </div>
 
         <div className="text-center mb-10">

@@ -55,3 +55,18 @@ a {
 .animate-slide-out-right {
   animation: slide-out-right 0.4s cubic-bezier(0.4,0,0.2,1) both;
 }
+
+/* Performance optimizations for scroll animations */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

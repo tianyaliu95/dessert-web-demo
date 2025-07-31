@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { SlideUp, FadeIn, SlideLeft, SlideRight } from "../_components/ScrollAnimation";
 
 const LOCATIONS = [
   {
@@ -47,12 +48,16 @@ export default function LocationsPage() {
       {/* Hero Section */}
       <div className="bg-[#2e3f3a] text-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight">
-            Our Locations
-          </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-            Find your nearest Teapresso location and experience the perfect blend of tradition and innovation.
-          </p>
+          <FadeIn>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight">
+              Our Locations
+            </h1>
+          </FadeIn>
+          <SlideUp delay={300}>
+            <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+              Find your nearest Teapresso location and experience the perfect blend of tradition and innovation.
+            </p>
+          </SlideUp>
         </div>
       </div>
 
@@ -60,13 +65,16 @@ export default function LocationsPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         {/* UK Locations */}
         <div className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-8 text-center">
-            United Kingdom
-          </h2>
+          <SlideUp>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-8 text-center">
+              United Kingdom
+            </h2>
+          </SlideUp>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {LOCATIONS.map((loc, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+              <SlideUp key={index} delay={index * 200}>
+                <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
                     <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-2">
@@ -111,21 +119,21 @@ export default function LocationsPage() {
                   </svg>
                   Get Directions
                 </button>
-              </div>
+                </div>
+              </SlideUp>
             ))}
           </div>
         </div>
 
         {/* Coming Soon Section */}
-        <div className="text-center">
+        <SlideUp className="text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
             Canada (Coming Soon)
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             We're excited to announce our expansion into Canada! Stay tuned for updates on our new locations.
           </p>
-          
-        </div>
+        </SlideUp>
       </div>
     </div>
   );

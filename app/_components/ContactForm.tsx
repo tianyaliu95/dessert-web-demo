@@ -5,17 +5,19 @@ interface ContactFormProps {
   title?: string;
   subtitle?: string;
   className?: string;
+  type?: string;
 }
 
 export default function ContactForm({
   title = "Send us a message",
   subtitle = "Fill out the form below and we'll get back to you as soon as possible.",
-  className = ""
+  className = "",
+  type = "general"
 }: ContactFormProps) {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    enquiryType: "general",
+    enquiryType: type || "general",
     message: ""
   });
   const [attachments, setAttachments] = useState<File[]>([]);

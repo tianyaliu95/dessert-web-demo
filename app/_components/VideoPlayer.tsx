@@ -77,10 +77,12 @@ export default function VideoPlayer({ src, poster, title, className = "" }: Vide
         preload="metadata"
         poster={poster}
         playsInline
-        muted={false}
+        muted={true}
         style={{
           backgroundColor: '#000',
         }}
+        autoPlay={true}
+        loop={true}
       >
         <source src={src} type="application/x-mpegURL" />
         <source src={src} type="video/mp4" />
