@@ -1,0 +1,22 @@
+{
+  "headers": [
+    {
+      "source": "/favicon.(ico|png|svg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(apple-touch-icon|android-chrome|mstile).*\\.(png|svg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
+    }
+  ]
+} 

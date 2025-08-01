@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   description: "Experience the art of freshly brewed tea and coffee at Teapresso 野萃. Modern tea house serving handcrafted beverages, seasonal treats, and premium ingredients in Manchester, Leeds, and Glasgow. Your daily ritual destination.",
   keywords: [
-    "tea house", "coffee shop", "bubble tea", "milk tea", "freshly brewed tea", 
+    "tea house", "coffee shop", "bubble tea", "milk tea", "freshly brewed tea",
     "artisan coffee", "Manchester tea house", "Leeds coffee", "Glasgow cafe",
     "premium tea", "handcrafted beverages", "seasonal treats", "tea ritual",
     "modern tea house", "specialty drinks", "boba tea", "oolong tea", "matcha"
@@ -69,15 +69,18 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico?v=2' },
-      { url: '/favicon-16x16.png?v=2', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png?v=2', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico?v=3' },
+      { url: '/favicon-16x16.png?v=3', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png?v=3', sizes: '32x32', type: 'image/png' },
+      { url: '/android-chrome-192x192.png?v=3', sizes: '192x192', type: 'image/png' },
+      { url: '/android-chrome-512x512.png?v=3', sizes: '512x512', type: 'image/png' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png?v=2', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon.png?v=3', sizes: '180x180', type: 'image/png' },
     ],
     other: [
-      { rel: 'mask-icon', url: '/safari-pinned-tab.svg?v=2', color: '#2e3f3a' },
+      { rel: 'mask-icon', url: '/safari-pinned-tab.svg?v=3', color: '#2e3f3a' },
     ],
   },
   manifest: '/site.webmanifest',
@@ -98,14 +101,17 @@ export default function RootLayout({
           <meta name="theme-color" content="#2e3f3a" />
           <meta name="msapplication-TileColor" content="#2e3f3a" />
           <meta name="msapplication-config" content="/browserconfig.xml" />
-          
+
           {/* Preconnect to external domains for performance */}
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" />
-          
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+          <link rel="icon" type="image/x-icon" href="/favicon.ico?v=3" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg?v=3" color="#2e3f3a" />
+
           {/* JSON-LD Structured Data */}
           <script
             type="application/ld+json"
@@ -138,7 +144,7 @@ export default function RootLayout({
                     "addressCountry": "GB"
                   },
                   {
-                    "@type": "PostalAddress", 
+                    "@type": "PostalAddress",
                     "streetAddress": "61 The Headrow",
                     "addressLocality": "Leeds",
                     "postalCode": "LS1 6LR",
@@ -147,7 +153,7 @@ export default function RootLayout({
                   {
                     "@type": "PostalAddress",
                     "streetAddress": "100 Byres Rd",
-                    "addressLocality": "Glasgow", 
+                    "addressLocality": "Glasgow",
                     "postalCode": "G12 8TA",
                     "addressCountry": "GB"
                   }

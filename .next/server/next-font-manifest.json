@@ -1,34 +1,6 @@
 {
   "app": {
-    "[project]/app/_not-found/page": [
-      "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
-      "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.0faac26c.woff2"
-    ],
-    "[project]/app/about/page": [
-      "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
-      "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.0faac26c.woff2"
-    ],
-    "[project]/app/click-collect/page": [
-      "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
-      "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.0faac26c.woff2"
-    ],
-    "[project]/app/contact/page": [
-      "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
-      "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.0faac26c.woff2"
-    ],
     "[project]/app/franchising/page": [
-      "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
-      "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.0faac26c.woff2"
-    ],
-    "[project]/app/locations/page": [
-      "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
-      "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.0faac26c.woff2"
-    ],
-    "[project]/app/page": [
-      "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
-      "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.0faac26c.woff2"
-    ],
-    "[project]/app/privacy/page": [
       "static/media/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y-s.p.d1a74dd0.woff2",
       "static/media/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw-s.p.0faac26c.woff2"
     ]
