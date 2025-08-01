@@ -155,7 +155,7 @@ export default function ImageCarousel() {
 
         const interval = setInterval(() => {
             nextSlide();
-        }, 50000); // Change slide every 5 seconds
+        }, 5000); // Change slide every 5 seconds
 
         return () => clearInterval(interval);
     }, [currentIndex, isClient, isDragging]);
@@ -288,7 +288,7 @@ export default function ImageCarousel() {
             </div>
 
             {/* Dots Indicator */}
-            <div className="flex justify-center mt-6 space-x-2">
+            <div className="flex justify-center mt-6 md:mt-10 space-x-2">
                 {allSlides.map((_, index) => (
                     <button
                         key={index}
@@ -303,7 +303,7 @@ export default function ImageCarousel() {
             </div>
 
             {/* Thumbnail Navigation */}
-            <div className="hidden md:flex justify-center mt-8 space-x-4">
+            <div className="hidden md:flex justify-center mt-8 md:mt-10 space-x-4">
                 {allSlides.map((slide, index) => (
                     <button
                         key={index}

@@ -36,7 +36,7 @@ export default function ClickCollectPage() {
       </div>
 
       {/* Content Sections */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-16">
         {/* Image Sections */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <SlideLeft>
@@ -103,73 +103,73 @@ export default function ClickCollectPage() {
           </SlideLeft>
         </div>
 
-        {/* Video Section */}
-        <div className="my-16">
-          <SlideUp className="text-center mb-8">
-            {/* <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
-              Experience Click & Collect
-            </h2> */}
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Let's take a look at the process of making a cup of tea
-            </p>
-          </SlideUp>
-
-          <SlideUp delay={300}>
-            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200/50">
-              <div className="relative aspect-[9/16] md:aspect-video max-w-4xl mx-auto md:mt-16">
-                <VideoPlayer
-                  src="https://customer-ugajlzvkncemhxjh.cloudflarestream.com/a18bf24112a34a56ad61a7e71f2de7fb/manifest/video.m3u8"
-                  poster="/click_1.jpg"
-                  // title="Click & Collect"
-                  className="w-full h-full"
-                />
-              </div>
-
-              {/* Video Description */}
-              <div className="p-6 md:p-8">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                  <div>
-                    {/* <h3 className="text-xl font-bold text-[#2e3f3a] mb-2">
-                      See How It Works
-                    </h3> */}
-                    <p className="text-gray-600">
-                      From ordering to collection, discover the seamless Teapresso experience
-                    </p>
+        {/* Video and Menu Combined Section */}
+        <section className="my-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-start">
+            {/* Left: Video Section */}
+            <SlideUp>
+              <div className="order-1">
+                <div className="text-center lg:text-left mb-8 mt-8">
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4 text-center">
+                    Tea Making Process
+                  </h2>
+                  {/* <p className="text-gray-600 text-lg leading-relaxed">
+                    Let's take a look at the process of making a cup of tea
+                  </p> */}
+                </div>
+                
+                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200/50">
+                  <div className="relative max-w-xl mx-auto lg:max-w-none p-4 lg:p-6">
+                    <VideoPlayer
+                      src="/vid.mp4"
+                      className="w-full h-full rounded-lg md:h-[580px]"
+                    />
                   </div>
-                  <a
-                    href="https://www.teapresso.co.uk/s/order?location=11eff9bbb340e1a699353cecef6dbab4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-[#2e3f3a] hover:bg-[#2e3f3a]/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                  >
-                    <span>Order Now</span>
-                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </a>
+
+                  {/* Video Description */}
+                  <div className="p-6">
+                    <div className="flex flex-col gap-4">
+                      <div>
+                        <p className="text-gray-600 text-sm lg:text-base">
+                          From ordering to collection, discover the seamless Teapresso experience
+                        </p>
+                      </div>
+                      <a
+                        href="https://www.teapresso.co.uk/s/order?location=11eff9bbb340e1a699353cecef6dbab4"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center bg-[#2e3f3a] hover:bg-[#2e3f3a]/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                      >
+                        <span>Order Now</span>
+                        <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SlideUp>
-        </div>
+            </SlideUp>
 
-        <div className="my-8">
-          {/* Image Carousel */}
-          <SlideUp className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
-              Our Featured Menu
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Discover our handcrafted beverages available for Click & Collect
-            </p>
-          </SlideUp>
-          <SlideUp delay={300}>
-            <ImageCarousel />
-          </SlideUp>
-        </div>
+            {/* Right: Menu Section */}
+            <SlideUp delay={200}>
+              <div className="order-2">
+                <div className="text-center lg:text-left mb-8 md:mb-10">
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4 mt-8 text-center">
+                    Our Featured Menu
+                  </h2>
+                  {/* <p className="text-gray-600 text-lg leading-relaxed">
+                    Discover our handcrafted beverages available for Click & Collect
+                  </p> */}
+                </div>
+                <ImageCarousel />
+              </div>
+            </SlideUp>
+          </div>
+        </section>
 
         {/* CTA Section */}
-        <SlideUp className="text-center mt-16">
+        <SlideUp className="text-center mt-16 md:mt-28">
           <h2 className="text-2xl md:text-3xl font-bold text-[#2e3f3a] mb-4">
             Ready to Order?
           </h2>

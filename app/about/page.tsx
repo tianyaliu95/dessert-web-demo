@@ -61,7 +61,7 @@ export default function AboutPage() {
                 </p>
               </SlideUp>
               <SlideUp delay={400}>
-                <p className="text-base leading-relaxed">
+                <p className="text-base leading-relaxed italic">
                   At Teapresso, we don't just serve drinks — <strong>we serve experiences worth remembering.</strong>
                 </p>
               </SlideUp>
