@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://teapresso.co.uk'),
+  metadataBase: new URL('https://dessert-web-pi.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://teapresso.co.uk',
+    url: 'https://dessert-web-pi.vercel.app',
     title: 'Teapresso 野萃',
     description: 'Experience the art of freshly brewed tea and coffee at Teapresso 野萃. Modern tea house serving handcrafted beverages and seasonal treats.',
     siteName: 'Teapresso 野萃',
@@ -105,12 +105,7 @@ export default function RootLayout({
           {/* Preconnect to external domains for performance */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-          <link rel="icon" type="image/x-icon" href="/favicon.ico?v=3" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3" />
-          <link rel="mask-icon" href="/safari-pinned-tab.svg?v=3" color="#2e3f3a" />
+
 
           {/* JSON-LD Structured Data */}
           <script
@@ -122,9 +117,9 @@ export default function RootLayout({
                 "name": "Teapresso 野萃",
                 "alternateName": "Teapresso",
                 "description": "Modern tea house serving handcrafted beverages, seasonal treats, and premium ingredients. Experience the art of freshly brewed tea and coffee.",
-                "url": "https://teapresso.co.uk",
-                "logo": "https://teapresso.co.uk/logo.png",
-                "image": "https://teapresso.co.uk/home.jpg",
+                "url": "https://dessert-web-pi.vercel.app",
+                "logo": "https://dessert-web-pi.vercel.app/logo.png",
+                "image": "https://dessert-web-pi.vercel.app/home.jpg",
                 "priceRange": "££",
                 "servesCuisine": ["Tea", "Coffee", "Beverages", "Light Snacks"],
                 "acceptsReservations": false,
