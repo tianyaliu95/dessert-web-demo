@@ -59,7 +59,7 @@ export default function Navbar() {
           letterSpacing: '0.25px'
         }}>
         {NAV_LINKS.map((item) => (
-          <a
+          <Link
             key={item.href}
             href={item.href}
             className="relative group transition-all duration-200 px-3 py-2 rounded-lg focus:bg-[#2e3f3a]/10 focus:outline-none"
@@ -68,7 +68,7 @@ export default function Navbar() {
           >
             <span>{item.label}</span>
             <span className="block h-0.5 bg-[#2e3f3a] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
-          </a>
+          </Link>
         ))}
       </div>
       {/* Mobile hamburger */}
