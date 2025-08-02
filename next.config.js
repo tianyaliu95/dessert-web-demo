@@ -11,15 +11,7 @@ const nextConfig = {
           },
         ],
       },
-      {
-        source: '/favicon.svg',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=86400, must-revalidate',
-          },
-        ],
-      },
+
       {
         source: '/favicon-16x16.png',
         headers: [
