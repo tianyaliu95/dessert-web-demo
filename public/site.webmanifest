@@ -1,7 +1,6 @@
 {
   "name": "Teapresso 野萃",
   "short_name": "Teapresso",
-  "description": "Experience the art of freshly brewed tea and coffee at Teapresso 野萃. Modern tea house serving handcrafted beverages and seasonal treats.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

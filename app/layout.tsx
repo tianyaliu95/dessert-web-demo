@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico?v=6' },
+      { url: '/favicon.png?v=6' },
       { url: '/favicon-16x16.png?v=6', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32x32.png?v=6', sizes: '32x32', type: 'image/png' },
     ],
@@ -104,12 +104,12 @@ export default function RootLayout({
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
           {/* Favicon Links - Force Override */}
-          <link rel="shortcut icon" href="/favicon.ico?v=5" />
-          <link rel="icon" href="/favicon.ico?v=5" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=5" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=5" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=5" />
-          <link rel="mask-icon" href="/safari-pinned-tab.svg?v=5" color="#2e3f3a" />
+          <link rel="shortcut icon" href="/favicon.png?v=6" />
+          <link rel="icon" href="/favicon.png?v=6" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=6" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=6" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=6" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg?v=6" color="#2e3f3a" />
 
           {/* JSON-LD Structured Data */}
           <script
