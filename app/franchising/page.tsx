@@ -256,7 +256,7 @@ export default function FranchisingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <SlideUp delay={0}>
               <div className="bg-white rounded-2xl p-8 shadow-lg h-full flex flex-col">
-                <h3 className="text-xl font-bold text-[#2e3f3a] mb-4">
+                <h3 className="text-xl font-bold text-[#2e3f3a] mb-4 uppercase">
                   1. Type of Operation
                 </h3>
                 <p className="text-gray-700 leading-relaxed flex-grow">
@@ -267,7 +267,7 @@ export default function FranchisingPage() {
 
             <SlideUp delay={150}>
               <div className="bg-white rounded-2xl p-8 shadow-lg h-full flex flex-col">
-                <h3 className="text-xl font-bold text-[#2e3f3a] mb-4">
+                <h3 className="text-xl font-bold text-[#2e3f3a] mb-4 uppercase">
                   2. Number of Employees
                 </h3>
                 <div className="flex-grow">
@@ -283,7 +283,7 @@ export default function FranchisingPage() {
 
             <SlideUp delay={300}>
               <div className="bg-white rounded-2xl p-8 shadow-lg h-full flex flex-col">
-                <h3 className="text-xl font-bold text-[#2e3f3a] mb-4">
+                <h3 className="text-xl font-bold text-[#2e3f3a] mb-4 uppercase">
                   3. Project Costs
                 </h3>
                 <p className="text-gray-700 leading-relaxed flex-grow">
@@ -294,7 +294,7 @@ export default function FranchisingPage() {
 
             <SlideUp delay={450}>
               <div className="bg-white rounded-2xl p-8 shadow-lg h-full flex flex-col">
-                <h3 className="text-xl font-bold text-[#2e3f3a] mb-4">
+                <h3 className="text-xl font-bold text-[#2e3f3a] mb-4 uppercase">
                   4. Ongoing Fees
                 </h3>
                 <div className="flex-grow">
@@ -330,7 +330,7 @@ export default function FranchisingPage() {
                 </div>
 
                 <div className="bg-[#FAF8ED] rounded-2xl p-8">
-                  <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6">Site Criteria</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-[#2e3f3a] mb-6">SITE CRITERIA</h3>
                   <ul className="space-y-4 text-[#2e3f3a]">
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-[#2e3f3a] rounded-full mt-3 mr-4 flex-shrink-0"></span>
@@ -416,7 +416,11 @@ export default function FranchisingPage() {
                 {
                   step: "04",
                   title: "Grand Opening",
-                  description: "It's finally here — opening day! You're now an official Teapresso franchise owner, and your store is ready to serve its very first customers. The aroma of freshly brewed milk tea and coffee fills the air, your team is trained and prepped, and your doors are open to the community. Let the journey begin — one perfectly brewed cup at a time.",
+                  description: (
+                    <>
+                      It's finally here — opening day! You're now an official <strong>Teapresso franchise owner</strong>, and your store is ready to serve its very first customers. The aroma of freshly brewed milk tea and coffee fills the air, your team is trained and prepped, and your doors are open to the community. Let the journey begin — one perfectly brewed cup at a time.
+                    </>
+                  ),
                   image: "/franchise.png"
                 }
               ].map((process, index) => (
