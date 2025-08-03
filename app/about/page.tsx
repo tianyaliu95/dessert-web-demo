@@ -47,7 +47,7 @@ export default function AboutPage() {
             <div className="space-y-4 text-gray-700 text-center px-4">
               <SlideUp delay={200}>
                 <p className="text-base leading-relaxed font-semibold">
-                  Founded in 2024, Teapresso is a modern tea & coffee house redefining how the world enjoys tea and coffee, one freshly extracted cup at a time.
+                  Founded in 2024, Teapresso is a modern tea and coffee house redefining how the world enjoys tea and coffee, one freshly extracted cup at a time.
                 </p>
               </SlideUp>
               <SlideUp delay={400}>

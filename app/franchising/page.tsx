@@ -260,7 +260,7 @@ export default function FranchisingPage() {
                   1. Type of Operation
                 </h3>
                 <p className="text-gray-700 leading-relaxed flex-grow">
-                  Fast casual beverage concept, specialising in freshly brewed milk teas and specialty coffees, prepared using single-cup extraction technology for maximum freshness and flavour. Teapresso offers a streamlined, high-efficiency model focused solely on premium drinks — designed for dine-in, takeaway, and delivery in compact, modern spaces.
+                  <strong>Fast casual beverage concept</strong>, specialising in freshly brewed <strong>milk teas</strong> and <strong>specialty coffees</strong>, prepared using single-cup extraction technology for maximum freshness and flavour. Teapresso offers a streamlined, high-efficiency model focused solely on premium drinks — designed for <strong>dine-in, takeaway, and delivery</strong> in compact, modern spaces.
                 </p>
               </div>
             </SlideUp>
@@ -295,7 +295,7 @@ export default function FranchisingPage() {
             <SlideUp delay={450}>
               <div className="bg-white rounded-2xl p-8 shadow-lg h-full flex flex-col">
                 <h3 className="text-xl font-bold text-[#2e3f3a] mb-4">
-                  4. ONGOING FEES
+                  4. Ongoing Fees
                 </h3>
                 <div className="flex-grow">
                   <p className="text-gray-700 leading-relaxed text-lg">
